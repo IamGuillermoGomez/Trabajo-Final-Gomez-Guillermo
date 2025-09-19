@@ -1,0 +1,774 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #E9F1FF;
+}
+
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+}
+.header .navbar {
+  background-color: white;
+  border-radius: 25px;
+  width: 1565px;
+}
+.header .navbar a img {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.header .navbar .label_hamburguesa {
+  display: none;
+}
+.header .navbar .menu_hamburguesa {
+  display: none;
+}
+.header .navbar .ul_links {
+  width: 1565px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  list-style: none;
+}
+.header .navbar .ul_links .li_links .link {
+  font-size: 20px;
+  color: #022C47;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+.header .navbar .ul_links .li_links .link:hover {
+  background-color: #022C47;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.3s;
+}
+
+main {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+}
+.main .uno {
+  background-color: #022C47;
+  border-radius: 25px;
+  width: 1565px;
+  height: 350px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "inversionesarg toro descarga" "inversionesarg toro descarga";
+  margin-top: 20px;
+}
+.main .uno .inversionesarg {
+  color: white;
+}
+.main .uno .inversionesarg .titulo {
+  font-size: 33px;
+}
+.main .uno .inversionesarg .subtitulo {
+  font-size: 23px;
+}
+.main .uno .inversionesarg .linea_separadora {
+  width: 100%;
+  max-width: 600px;
+  height: 2px;
+  background: linear-gradient(to right, white, purple);
+  border: none;
+}
+.main .uno .toro {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+.main .uno .toro:hover {
+  transform: translate(30px, 15px);
+}
+.main .uno .descarga {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.main .uno .descarga p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+.main .uno .descarga .qr {
+  background-color: white;
+  border-radius: 15px;
+  width: 220px;
+  transition: all 0.5s;
+}
+.main .uno .descarga .qr:hover {
+  transform: scale(1.1, 1.1);
+}
+.main .span {
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(111, 78, 135, 0.61) 50%, rgb(106, 40, 161) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.main .quinto {
+  width: 1565px;
+  height: 100px;
+  align-self: center;
+  margin-top: 30px;
+  background-color: #022C47;
+  border-radius: 25px;
+  align-content: center;
+}
+.main .quinto h2 {
+  color: white;
+  text-align: center;
+  font-size: 33px;
+}
+.main .sexto {
+  width: 50vh;
+  height: 50px;
+  align-self: center;
+  margin-top: 30px;
+  background-color: #022C47;
+  border-radius: 25px;
+  align-content: center;
+}
+.main .sexto h4 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.main .seccion {
+  width: 1565px;
+  height: 750px;
+  margin-top: 30px;
+  border-radius: 25px;
+  display: flex;
+  align-self: center;
+}
+.main .seccion .texto {
+  align-self: center;
+}
+.main .seccion .texto .invertiresparatodos {
+  font-size: 140px;
+}
+.main .seccion .texto .compara {
+  font-size: 30px;
+}
+.main .seccion h2 {
+  color: #022C47;
+  font-size: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.main .seccion p {
+  color: black;
+  font-size: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.main .seccion img {
+  width: 75vh;
+  height: 750px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.main .seccion .imagen {
+  align-self: center;
+}
+.main .seccion .imagen .abajo {
+  display: none;
+}
+.main .arreglar {
+  width: 70vh;
+  height: 30px;
+  align-self: center;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.main .banco {
+  width: 70vh;
+  height: 70px;
+  align-self: center;
+  margin-top: 30px;
+  background-color: #3a5b70;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #022C47;
+}
+.main .banco:hover {
+  border: 9px solid #022C47;
+  transition: all 0.3s;
+}
+.main .banco img {
+  background-color: #ffffff;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-left: 20px;
+  border: 1px solid #000000;
+}
+.main .banco h3 {
+  color: white;
+  font-size: 15px;
+  margin-left: 15px;
+  width: 25vh;
+}
+.main .banco p {
+  color: white;
+  font-size: 30px;
+  margin: auto;
+}
+.main .banco .goku {
+  width: 70vh;
+  text-align: end;
+  padding-right: 20px;
+}
+.main .banco .usd {
+  display: flex;
+  justify-content: center;
+  width: 60vh;
+  gap: 70px;
+  color: white;
+}
+.main .banco .usd .compraa h4 {
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  margin-top: 5px;
+}
+.main .banco .usd .compraa p {
+  font-size: 25px;
+}
+.main .banco .usd .ventaa h4 {
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  margin-top: 5px;
+}
+.main .banco .usd .ventaa p {
+  font-size: 25px;
+}
+.main .precios {
+  width: 70vh;
+  height: 500px;
+  margin-top: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.main .precios .dolar {
+  background-color: #022C47;
+  width: 30vh;
+  height: 100%;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .precios .dolar h3 {
+  color: rgb(255, 255, 255);
+  font-size: 34px;
+}
+.main .precios .dolar .dinero {
+  display: flex;
+  justify-content: center;
+  width: 30vh;
+  gap: 70px;
+  color: white;
+  margin-top: 43px;
+}
+.main .precios .dolar .dinero .compra {
+  text-align: center;
+}
+.main .precios .dolar .dinero .venta {
+  text-align: center;
+}
+.main .precios .dolar .dinero div h4 {
+  font-size: 23px;
+}
+.main .precios .dolar .dinero div p {
+  font-size: 34px;
+}
+.main .precios .dolar h5 {
+  background-color: #3a5b70;
+  width: 25vh;
+  height: 43px;
+  align-self: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+  color: white;
+  border: 3px solid rgb(0, 0, 0);
+}
+.main .precios .hoy .mep {
+  width: 37vh;
+  height: 70px;
+  margin-top: 30px;
+  margin-left: 25px;
+  background-color: #3a5b70;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000000;
+}
+.main .precios .hoy .mep h3 {
+  width: 500px;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+}
+.main .precios .hoy .mep h4 {
+  color: white;
+  font-size: 15px;
+}
+.main .precios .hoy .mep p {
+  font-size: 15px;
+}
+.main .precios .hoy .mep .usd {
+  display: flex;
+  justify-content: center;
+  width: 60vh;
+  gap: 70px;
+  color: white;
+}
+
+footer {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 150px;
+}
+
+.fin {
+  width: 1565px;
+  height: 550px;
+  align-self: center;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+.fin .soporte {
+  border-radius: 25px;
+  display: flex;
+  padding-bottom: 70px;
+}
+.fin .soporte img {
+  width: 230px;
+  border-radius: 15px;
+}
+.fin .soporte nav {
+  width: 100%;
+  padding-top: 30px;
+  font-size: 12px;
+}
+.fin .soporte nav h3 {
+  padding-left: 30px;
+}
+.fin .soporte ul {
+  list-style-type: none;
+}
+.fin .soporte ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.fin .redes {
+  height: 200px;
+}
+.fin .redes a img {
+  padding-left: 39px;
+  padding-bottom: 39px;
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s;
+}
+.fin .redes a img:hover {
+  transform: scale(1.2, 1.2);
+}
+.fin .redes p {
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+@media (max-width: 769px) {
+  .body {
+    width: 100%;
+    max-width: 769px;
+    margin: 0 auto;
+  }
+  header,
+  main,
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  .header .navbar {
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+  .header .navbar a img {
+    width: 90px;
+    height: auto;
+  }
+  .header .navbar .label_hamburguesa {
+    display: block;
+    cursor: pointer;
+  }
+  .header .navbar .menu_hamburguesa {
+    display: none;
+  }
+  .header .navbar .menu_hamburguesa:checked ~ .ul_links {
+    height: 250px;
+  }
+  .header .navbar .ul_links {
+    position: absolute;
+    top: 90px;
+    /* debajo del header */
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #022C47;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: height 0.3s ease-in-out;
+  }
+  .header .navbar .ul_links .li_links .link {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .main .uno {
+    width: 100%;
+    height: 170px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main .uno .inversionesarg {
+    width: 300px;
+    color: white;
+  }
+  .main .uno .inversionesarg .titulo {
+    font-size: 20px;
+  }
+  .main .uno .inversionesarg .subtitulo {
+    font-size: 15px;
+  }
+  .main .uno .inversionesarg .linea_separadora {
+    width: 100%;
+    max-width: 200px;
+    height: 1px;
+    background: linear-gradient(to right, white, purple);
+  }
+  .main .uno .toro {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .main .uno .descarga {
+    width: 100px;
+    height: 200px;
+    padding-bottom: 30px;
+  }
+  .main .uno .descarga p {
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .main .uno .descarga .qr {
+    background-color: white;
+    border-radius: 15px;
+    width: 100px;
+  }
+  .main .quinto {
+    width: 100%;
+  }
+  .main .quinto h2 {
+    font-size: 21px;
+  }
+  .main .seccion {
+    width: 100%;
+    height: 400px;
+    margin-top: 1px;
+    padding-top: 1px;
+  }
+  .main .seccion .texto .invertiresparatodos {
+    font-size: 45px;
+  }
+  .main .seccion .texto .compara {
+    font-size: 12px;
+  }
+  .main .seccion h2 {
+    font-size: 45px;
+  }
+  .main .seccion p {
+    font-size: 12px;
+  }
+  .main .seccion img {
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+  }
+  .main .seccion .imagen {
+    align-self: center;
+  }
+  .main .seccion .imagen .abajo {
+    display: none;
+  }
+  .fin {
+    width: 100%;
+  }
+  .fin .soporte nav {
+    font-size: 10px;
+  }
+  .fin .soporte nav h3 {
+    font-size: 17px;
+  }
+  .fin .redes p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 321px) {
+  .body {
+    width: 100%;
+    max-width: 321px;
+    margin: 0 auto;
+  }
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+  .header {
+    z-index: 1000;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .uno {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+  }
+  .main .uno .inversionesarg {
+    width: 175px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main .uno .inversionesarg .titulo {
+    font-size: 10px;
+  }
+  .main .uno .inversionesarg .subtitulo {
+    font-size: 9px;
+  }
+  .main .uno .inversionesarg .linea_separadora {
+    width: 100%;
+    max-width: 175px;
+    height: 1px;
+    background: linear-gradient(to right, white, purple);
+  }
+  .main .uno .toro {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-top: 100px;
+  }
+  .main .uno .descarga {
+    width: 150px;
+    height: 200px;
+    padding-bottom: 30px;
+  }
+  .main .uno .descarga p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .main .seccion {
+    height: 200px;
+    background-color: #ffffff;
+    margin-top: 10px;
+  }
+  .main .seccion .texto .invertiresparatodos {
+    font-size: 25px;
+  }
+  .main .seccion .texto .compara {
+    font-size: 10px;
+  }
+  .main .seccion h2 {
+    font-size: 25px;
+  }
+  .main .seccion p {
+    font-size: 10px;
+  }
+  .main .seccion img {
+    display: none;
+  }
+  .main .seccion .imagen .hombre {
+    display: none;
+  }
+  .main .seccion .imagen .abajo {
+    display: none;
+  }
+  .main .quinto {
+    width: 100%;
+    height: 50px;
+  }
+  .main .quinto h2 {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main .sexto {
+    width: 200px;
+    background-color: #022C47;
+    border-radius: 10px;
+  }
+  .main .sexto h4 {
+    font-size: 12px;
+  }
+  .main .banco {
+    width: 100%;
+  }
+  .main .banco h3 {
+    font-size: 10px;
+    width: 330px;
+  }
+  .main .banco .goku p {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .main .banco .usd {
+    width: 550px;
+    height: 70px;
+    justify-content: space-between;
+    gap: 1px;
+    margin-right: 20px;
+  }
+  .main .banco .usd .compraa h4 {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .main .banco .usd .compraa p {
+    font-size: 15px;
+  }
+  .main .banco .usd .ventaa h4 {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .main .banco .usd .ventaa p {
+    font-size: 15px;
+  }
+  .main #mercadito {
+    margin-top: -90px;
+  }
+  .main .precios {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main .precios .dolar {
+    width: 93%;
+    height: 370px;
+    border-radius: 23px;
+  }
+  .main .precios .dolar h3 {
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+  }
+  .main .precios .dolar .dinero {
+    width: 90%;
+  }
+  .main .precios .dolar .dinero .compra {
+    text-align: center;
+  }
+  .main .precios .dolar .dinero .venta {
+    text-align: center;
+  }
+  .main .precios .dolar .dinero div {
+    width: 90px;
+  }
+  .main .precios .dolar .dinero div h4 {
+    font-size: 23px;
+    padding-top: 10px;
+  }
+  .main .precios .dolar .dinero div p {
+    font-size: 23px;
+  }
+  .main .precios .hoy {
+    display: none;
+  }
+  footer {
+    height: 325px;
+  }
+  .fin {
+    height: 300px;
+  }
+  .fin .soporte nav {
+    width: 100%;
+  }
+  .fin .soporte nav h3 {
+    font-size: 10px;
+  }
+  .fin .soporte nav ul li {
+    font-size: 8px;
+  }
+  .fin .soporte img {
+    display: none;
+  }
+  .fin .redes {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
